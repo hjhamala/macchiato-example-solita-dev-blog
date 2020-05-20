@@ -1,5 +1,6 @@
 {:source-paths ["src" "test"]
- :dependencies [[com.taoensso/timbre "4.10.0"]]
+ :dependencies [[com.taoensso/timbre "4.10.0"]
+                [macchiato/core "0.2.17"]]
  :builds {:app {:target :node-library
                 :source-map true
                 :exports {:server macchiato-test.core/server}

@@ -11,7 +11,21 @@
   },
   "keywords": [],
   "devDependencies": {
-    "shadow-cljs": "2.9.8"
+    "shadow-cljs": "2.9.8",
+    "source-map-support": "^0.5.19"
   },
-  "dependencies": {}
+  "dependencies": {
+    "concat-stream": "^2.0.0",
+    "content-type": "^1.0.4",
+    "cookies": "^0.8.0",
+    "etag": "^1.8.1",
+    "lru": "^3.1.0",
+    "multiparty": "^4.2.1",
+    "qs": "^6.9.4",
+    "random-bytes": "^1.0.0",
+    "simple-encryptor": "^3.0.0",
+    "url": "^0.11.0",
+    "ws": "^7.3.0",
+    "xregexp": "^4.3.0"
+  }
 }
