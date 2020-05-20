@@ -1,0 +1,17 @@
+{
+  "name": "macchiato-shadow-cljs-example",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "shadow-cljs watch app",
+    "compile": "shadow-cljs compile app",
+    "release": "shadow-cljs release app",
+    "start_release": "node -e 'require(\"./target/main.js\").server()'"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "shadow-cljs": "2.9.8"
+  },
+  "dependencies": {}
+}

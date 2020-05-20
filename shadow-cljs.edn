@@ -1,0 +1,8 @@
+{:source-paths ["src" "test"]
+ :dependencies [[com.taoensso/timbre "4.10.0"]]
+ :builds {:app {:target :node-library
+                :source-map true
+                :exports {:server macchiato-test.core/server}
+                :output-dir "target"
+                :output-to "target/main.js"
+                :compiler-options {:optimizations :simple}}}}
