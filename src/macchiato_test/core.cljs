@@ -27,7 +27,13 @@
                           (respond {:status 200 :body {:message (str "Hello: " (-> request :parameters :query :name))}}))}
      :post {:parameters {:body {:my-body string?}}
             :handler    (fn [request respond _]
-                          (respond {:status 200 :body {:message (str "Hello: " (-> request :parameters :body :my-body))}}))}}]])
+                          (respond {:status 200 :body {:message (str "Hello: " (-> request :parameters :body :my-body))}}))}}]
+   ["/bad-response-bug"
+    {:get  {:parameters {:query {:name string?}}
+            :responses  {200 {:body {:message string?}}}
+            :handler    (fn [request respond _]
+                          (respond {:status 200 :body {:messag (str "Hello: " (-> request :parameters :query :name))}}))}}]
+   ])
 
 (defn wrap-coercion-exception
   "Catches potential synchronous coercion exception in middleware chain"
