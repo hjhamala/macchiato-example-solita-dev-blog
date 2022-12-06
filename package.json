@@ -21,7 +21,7 @@
     "etag": "^1.8.1",
     "lru": "^3.1.0",
     "multiparty": "^4.2.1",
-    "qs": "^6.9.4",
+    "qs": "^6.9.7",
     "random-bytes": "^1.0.0",
     "simple-encryptor": "^3.0.0",
     "url": "^0.11.0",
